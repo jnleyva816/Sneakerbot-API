@@ -134,6 +134,16 @@ For each API, view the docs and try the requests in Postman.
 - [Proxies](https://documenter.getpostman.com/view/5027621/TVt2c3ee) - this is how you can pre-store proxies that the bot will use when launching a task. Proxies are rotated so that they are never reused. In the future, this bot may include an integration with a proxy service like [Bright Data (formerly Luminati)](https://brightdata.com/).
 - [Tasks](https://documenter.getpostman.com/view/5027621/TVt2c3ed) - this is how you can pre-store, and then start checkout tasks.
 
+# UI/UX
+
+cd into Sneakekerbot/client 
+npm i 
+npm start 
+
+loads full UI to add addresses, proxies, and tasks to API
+
+Still underdevelopment, but majority is functional and will work!
+
 ### UPDATE (as of 05/30/2021)
 
 You can now specify a `product_code` on tasks. You will still need to provide the `url` e.g. https://nike.com but can also provide a `product_code` e.g. "DA3130-100".
