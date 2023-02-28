@@ -38,6 +38,7 @@
 .current_address_section{
     width: 100%;
     height: 100%;
+    align-items: center;
 }
 
 .styled-table tbody tr {

@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Addresses from './pages/addresses/addresses.js'
 import Tasks from './pages/Tasks/tasks'
 import Proxies from './pages/Proxies/proxies'
+import 'remixicon/fonts/remixicon.css'
 
 import {
   createBrowserRouter,

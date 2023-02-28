@@ -1,6 +1,6 @@
 import React from 'react'
 import './AddressesDelete.css'
-import{ useState} from "react";
+import{ useState, useEffect} from "react";
 import  axios from 'axios';
 
 const AddressesDelete = () => {
@@ -25,6 +25,12 @@ const AddressesDelete = () => {
       setData(newdata)
       console.log(newdata)
     }
+    const [message, setMessage] = useState("");
+    useEffect(() => {
+    fetch("http://localhost:8081/v1/addresses")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
+  }, []);
   return (
     <div>
         <h2 className='section_title'>Delete Addreses by ID</h2>
@@ -32,7 +38,8 @@ const AddressesDelete = () => {
         <form onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>
             <p className='section_title'> Enter Id</p>
           <input onChange={(e)=>handle(e)} id="id" value ={data.type} placeholder="ex. 22"type="text" ></input>
-          <button >Submit</button>
+          <p>{message.id}</p>
+          <button >Submit<i class="ri-arrow-right-line"></i></button>
         </form>
         </section>
         

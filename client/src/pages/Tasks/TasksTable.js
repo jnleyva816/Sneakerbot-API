@@ -17,6 +17,12 @@ const TasksTable = () => {
           setList(json.data)
       });
     }
+    const [message, setMessage] = useState("");
+    useEffect(() => {
+    fetch("http://localhost:8081/v1/tasks")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
+  }, []);
   return (
     <div>
         <section className='current_address_section'>
@@ -55,6 +61,7 @@ const TasksTable = () => {
           </tbody>
           
         </table>
+        <p>{message}</p>
         </section>
       </section>
     </div>

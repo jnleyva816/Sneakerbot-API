@@ -5,7 +5,7 @@ const isDev = require("electron-is-dev")
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 1000,
-    height: 1200,
+    height: 1000,
     resizable: false,
     autoHideMenuBar: true
   });

@@ -22,7 +22,13 @@ const AddressForm = () => {
     })
     const [message, setMessage] = useState("");
     useEffect(() => {
-    fetch("http://localhost:8081/v1/addresses")
+
+    const requestOptions ={
+      method: 'POST',
+      headers: {'Content-type': "application/json"},
+      body: JSON.stringify()
+    }
+    fetch("http://localhost:8081/v1/addresses", requestOptions)
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
@@ -62,27 +68,27 @@ const AddressForm = () => {
         <section className='form_section'>
         <form  onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>
           
-          <p>Type (Billing/Shipping)</p>
+          <p className='label'>Type (Billing/Shipping)</p>
           <select name="type" onChange={(e)=>handle(e)} id="type" value ={data.type} placeholder="Type"type="text" >
             <option value="" disable selected>Select type</option>
             <option value="billing">Billing</option>
             <option value="shipping">Shipping</option>
           </select>
-          <p>First Name</p>
+          <p className='label'>First Name</p>
           <input onChange={(e)=>handle(e)} value ={data.first_name} id="first_name" placeholder="First Name"type="text" ></input>
-          <p>Last Name</p>
+          <p className='label'>Last Name</p>
           <input onChange={(e)=>handle(e)} id="last_name" value ={data.last_name}placeholder="Last Name"type="text" ></input>
-          <p>Email</p>
+          <p className='label'>Email</p>
           <input onChange={(e)=>handle(e)} id="email_address" value ={data.email_address} placeholder="Email: ex. john@gmail.com"type="text" ></input>
-          <p>Phone Number</p>
+          <p className='label'>Phone Number</p>
           <input onChange={(e)=>handle(e)} id="phone_number" value ={data.phone_number} placeholder="Phone Number"type="text" ></input>
-          <p>Address 1</p>
+          <p className='label'>Address 1</p>
           <input onChange={(e)=>handle(e)} id="address_line_1"  value ={data.address_line_1} placeholder="Address: ex. 1234 lane way"type="text" ></input>
-          <p>Address 2</p>
+          <p className='label'>Address 2</p>
           <input onChange={(e)=>handle(e)} id="address_line_2" value ={data.address_line_2} placeholder="(Optional) ex. unit 201"type="text" ></input>
-          <p>City</p>
+          <p className='label'>City</p>
           <input onChange={(e)=>handle(e)} id="city" value ={data.city} placeholder="City"type="text" ></input>
-          <p>State</p>
+          <p className='label'>State</p>
             <select onChange={(e)=>handle(e)} id="state" value ={data.state} placeholder="State"type="text">
                 <option value="" disable selected>Select State</option>
 	              <option value="AL">Alabama</option>
@@ -137,13 +143,13 @@ const AddressForm = () => {
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select>
-          <p>Country</p>
+          <p className='label'>Country</p>
           <input onChange={(e)=>handle(e)} id="country" value ={data.country} placeholder="Country: ex. USA"type="text" ></input>
-          <p>Postal Code</p>
-          <input onChange={(e)=>handle(e)} id="postal_code" value ={data.postal_code} placeholder="Postal Code: ex. 11345"type="text" ></input>
-          <button  type='submit'>Create new address</button>
-      </form>
-      <p>{message}</p>
+          <p className='label'>Postal Code</p>
+          <input onChange={(e)=>handle(e)} id="postal_code" value ={data.postal_code} placeholder="Postal Code: ex. 11345"type="text"></input>
+          <button  type='submit'>Create new address <i class="ri-arrow-right-line"></i></button>
+      </form> 
+      <p>{}</p>
       </section>
     </div>
   )

@@ -68,7 +68,7 @@ const TasksForm = () => {
           <input onChange={(e)=>handle(e)} id="shipping_address_id" value ={data.shipping_address_id} placeholder="ex. 22"type="text" ></input>
           <p>Notification Email</p>
           <input onChange={(e)=>handle(e)} id="notification_email_address" value ={data.notification_email_address} placeholder="Email: ex. john@gmail.com"type="text" ></input>
-          <button  type='submit'>Create new Task</button>
+          <button  type='submit'>Create new Task<i class="ri-arrow-right-line"></i></button>
       </form>
       </section>
     </div>

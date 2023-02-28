@@ -57,7 +57,7 @@ const ProxiesForm = () => {
           <p>Password</p>
           <input onChange={(e)=>handle(e)} id="password" value ={data.password} placeholder="Password"type="password" ></input>
           
-          <button  type='submit'>Create new Proxy</button>
+          <button  type='submit'>Create new Proxy<i class="ri-arrow-right-line"></i></button>
       </form>
       </section>
     </div>

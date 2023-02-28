@@ -15,8 +15,11 @@ const Tasks = () => {
       <TasksTable/>
       <TasksForm/>
       <TasksDelete/>
-      <TasksStart />
+      <section className='taskFunctions'>
+      <TasksStart/>
       <TasksStop />
+      </section>
+      
 
     </div>
   );

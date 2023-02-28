@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 
 import Navbar from './Navbar'
+import Navbar2 from "./Navbar2.0";
 
 
 
@@ -27,6 +29,9 @@ function App() {
         <p>2. Add Proxies in proxies tab</p>
         <p>
           3. Create tasks in tasks tab, then start a task when day of drop.
+        </p>
+        <p className="home_links">
+          You can access the app inside of "<Link >http://localhost:3000</Link>" or "<Link>http://127.0.0.0:3000"</Link>
         </p>
       </section>         
     </div>

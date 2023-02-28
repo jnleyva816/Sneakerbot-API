@@ -29,15 +29,15 @@ const TasksStart = () => {
     console.log(newdata)
   } 
   return (
-    <div className='task_delete'>
+    <div className='task_start'>
         <h2 className='section_title'>Start Task by ID</h2>
         <section className='form_section'>
         <form onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>
-            <p className='section_title'> Enter Id</p>
+            <p className='start_title'> Enter Id</p>
           <input onChange={(e)=>handle(e)} id="id" value ={data.type} placeholder="ex. 22"type="text" ></input>
-          <p >Friendly Card Name</p>
+          <p className='start_title'>Friendly Card Name</p>
           <input onChange={(e)=>handle(e)} value ={data.card_friendly_name} id="card_friendly_name" placeholder="ex. mastercard"type="text" ></input>
-          <button >Submit</button>
+          <button >Submit<i class="ri-arrow-right-line"></i></button>
         </form>
         </section>
        
