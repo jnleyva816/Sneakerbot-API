@@ -26,13 +26,17 @@ const ProxiesDelete = () => {
       console.log(newdata)
     }  
   return (
-    <div>
-        <h2 className='section_title'>Delete Proxy by ID</h2>
-        <form onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>
+    <div className='proxies_delete'>
+      <h2 className='section_title'>Delete Proxy by ID</h2>
+      <section className='form_section'>
+      <form onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>
             <p className='section_title'> Enter Id</p>
           <input onChange={(e)=>handle(e)} id="id" value ={data.type} placeholder="ex. 22"type="text" ></input>
           <button >Submit</button>
         </form>
+      </section>
+
+        
     </div>
   )
 }

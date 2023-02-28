@@ -4,6 +4,8 @@ import './tasks.css'
 import TasksForm from './TasksForm';
 import TasksTable from './TasksTable';
 import TasksDelete from './TasksDelete';
+import TasksStart from './TasksStart';
+import TasksStop from './TasksStop';
   
 const Tasks = () => {
   return (
@@ -13,6 +15,8 @@ const Tasks = () => {
       <TasksTable/>
       <TasksForm/>
       <TasksDelete/>
+      <TasksStart />
+      <TasksStop />
 
     </div>
   );
