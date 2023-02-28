@@ -1,6 +1,6 @@
 import React from 'react'
 import './AddressForm.css'
-import{ useState} from "react";
+import{ useState, useEffect} from "react";
 import  axios from 'axios';
 
 
@@ -20,6 +20,12 @@ const AddressForm = () => {
       email_address:'',
       phone_number:'',
     })
+    const [message, setMessage] = useState("");
+    useEffect(() => {
+    fetch("http://localhost:8081/v1/addresses")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
+  }, []);
   
     function submit(e){
       // e.preventDefault();
@@ -70,7 +76,6 @@ const AddressForm = () => {
           <input onChange={(e)=>handle(e)} id="email_address" value ={data.email_address} placeholder="Email: ex. john@gmail.com"type="text" ></input>
           <p>Phone Number</p>
           <input onChange={(e)=>handle(e)} id="phone_number" value ={data.phone_number} placeholder="Phone Number"type="text" ></input>
-
           <p>Address 1</p>
           <input onChange={(e)=>handle(e)} id="address_line_1"  value ={data.address_line_1} placeholder="Address: ex. 1234 lane way"type="text" ></input>
           <p>Address 2</p>
@@ -137,9 +142,8 @@ const AddressForm = () => {
           <p>Postal Code</p>
           <input onChange={(e)=>handle(e)} id="postal_code" value ={data.postal_code} placeholder="Postal Code: ex. 11345"type="text" ></input>
           <button  type='submit'>Create new address</button>
-
-
       </form>
+      <p>{message}</p>
       </section>
     </div>
   )

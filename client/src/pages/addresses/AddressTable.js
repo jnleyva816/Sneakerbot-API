@@ -17,6 +17,13 @@ const AddressTable = () => {
         setList(json.data)
     });
   }
+
+  const [message, setMessage] = useState("");
+    useEffect(() => {
+    fetch("http://localhost:8081/v1/addresses")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
+  }, []);
   return (
     <div>
         <section className='current_address_section'>
@@ -51,8 +58,8 @@ const AddressTable = () => {
             ))
           }
           </tbody>
-          
         </table>
+        <p>{message}</p>
         </section>
       </section>
     </div>
