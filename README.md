@@ -136,11 +136,11 @@ For each API, view the docs and try the requests in Postman.
 
 # UI/UX
 
-cd into Sneakekerbot/client 
+1. `$ cd Sneakekerbot/client` 
 
-npm i
+2. `$ npm i`
  
-npm start 
+3. `$ npm start `
 
 loads full UI to add addresses, proxies, and tasks to API
 
