@@ -98,6 +98,20 @@ When you're ready, start the server with:
 
 `$ npm start`
 
+# UI/UX
+
+After completeting steps above....
+
+1. `$ cd Sneakekerbot/client` 
+
+2. `$ npm i`
+ 
+3. `$ npm start `
+
+loads full UI to add addresses, proxies, and tasks to API
+
+Still underdevelopment, but majority is functional and will work!
+
 ## Optional: Using Docker / Docker Compose
 
 This may be particularly useful for Linux users who have reported issues with Puppeteer and Chromium.
@@ -134,17 +148,6 @@ For each API, view the docs and try the requests in Postman.
 - [Proxies](https://documenter.getpostman.com/view/5027621/TVt2c3ee) - this is how you can pre-store proxies that the bot will use when launching a task. Proxies are rotated so that they are never reused. In the future, this bot may include an integration with a proxy service like [Bright Data (formerly Luminati)](https://brightdata.com/).
 - [Tasks](https://documenter.getpostman.com/view/5027621/TVt2c3ed) - this is how you can pre-store, and then start checkout tasks.
 
-# UI/UX
-
-1. `$ cd Sneakekerbot/client` 
-
-2. `$ npm i`
- 
-3. `$ npm start `
-
-loads full UI to add addresses, proxies, and tasks to API
-
-Still underdevelopment, but majority is functional and will work!
 
 ### UPDATE (as of 05/30/2021)
 
