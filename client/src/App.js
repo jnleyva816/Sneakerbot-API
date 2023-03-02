@@ -20,7 +20,9 @@ function App() {
       <Navbar/>  
       <h1 className="title">{message}</h1>  
       <section>
-        <p>
+        <p>Please make sure you have completed all steps, including setting up db, and editing your .env.local file.</p>
+        <p>Otherwise this, will not work.</p>
+        <p className="section_title">
           To get started, please add an address to the queue.
         </p>
         <p>
