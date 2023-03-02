@@ -31,7 +31,7 @@ const TasksStop = () => {
         <form onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>
             <p className='stop_title'> Enter Id</p>
           <input onChange={(e)=>handle(e)} id="id" value ={data.type} placeholder="ex. 22"type="text" ></input>
-          <button >Submit<i class="ri-arrow-right-line"></i></button>
+          <button >Stop<i class="ri-arrow-right-line"></i></button>
         </form>
         </section>
         

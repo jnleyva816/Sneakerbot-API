@@ -37,7 +37,7 @@ const TasksStart = () => {
           <input onChange={(e)=>handle(e)} id="id" value ={data.type} placeholder="ex. 22"type="text" ></input>
           <p className='start_title'>Friendly Card Name</p>
           <input onChange={(e)=>handle(e)} value ={data.card_friendly_name} id="card_friendly_name" placeholder="ex. mastercard"type="text" ></input>
-          <button >Submit<i class="ri-arrow-right-line"></i></button>
+          <button >Start<i class="ri-arrow-right-line"></i></button>
         </form>
         </section>
        
