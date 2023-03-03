@@ -45,7 +45,7 @@ const Sidebar = () => {
 
 
   return (
-    <div className='sidebar'>
+    <div className='sidebar close'>
       <header>
         <section className='image-text'>
           <span className='image'>
