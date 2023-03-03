@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from '../../Navbar'
 import './addresses.css'
 import AddressForm from './AddressForm';
 import AddressTable from './AddressTable';
 import AddressesDelete from './AddressesDelete';
+import Sidebar from '../../Sidebar';
 
 
 
@@ -13,12 +13,16 @@ const Addresses = () => {
   
 
   return (
-    <div className='addresses'>
-      <Navbar/>
+    <div className='content'>
+      <Sidebar/>
+      <section id="body">
       <h1 className='title'>Addresses</h1>
       <AddressTable/>
       <AddressForm/>
       <AddressesDelete/>
+      </section>
+      
+
     </div>
     
   );

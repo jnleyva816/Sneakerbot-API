@@ -1,19 +1,26 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow} = require('electron');
 const path = require("path")
 const isDev = require("electron-is-dev")
 
+
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 1000,
+    width: 1500,
     height: 1000,
-    resizable: false,
-    autoHideMenuBar: true
+    minHeight:1000,
+    minWidth:1000,
+    maxWidth:1500,
+    autoHideMenuBar:true
   });
 
   win.loadURL(
     isDev ? "http://localhost:3000" : `file://${path.join(__dirname, "../build/index.html")}`
     );
+
+
+
 };
+  
 
 app.whenReady().then(() => {
   createWindow();

@@ -31,7 +31,7 @@
 
 .styled-table tr{
     background-color: transparent;
-    color: #ffffff;
+    color: var(--primary--color);
     text-align: center;
 }
 
@@ -46,7 +46,8 @@
 }
 
 .styled-table tbody tr:nth-of-type(even) {
-    background-color: #5e74f0;
+    background-color: transparent;
+    color: var(--primary--color);
 }
 
 .styled-table tbody tr:last-of-type {
@@ -55,6 +56,6 @@
 
 .styled-table tbody tr.active-row {
     font-weight: bold;
-    color: #ffffff;
+    color: var(--primary--color);
 }
 
