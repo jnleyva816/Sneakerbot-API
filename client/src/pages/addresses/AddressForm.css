@@ -80,7 +80,7 @@ h2{
     font-size: 15px;
     font-weight: 200;
     margin-left: 10px;
-    transition: transform;
+    transition: var(--tran-02);
 }
 
 .address_form i:hover{

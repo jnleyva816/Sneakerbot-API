@@ -33,12 +33,12 @@ const TasksTable = () => {
         <table className='styled-table'>
           <tr>
             <th>ID</th>
-            <th>Site</th>
+            <th>Site(ID)</th>
             <th>Product Code</th>
             <th>Style index</th>
             <th>Size</th>
             <th>Billing ID</th>
-            <th>Shipping ID</th>
+            <th>Shipping ID</th>           
             <th>Email</th>
 
 
@@ -48,7 +48,7 @@ const TasksTable = () => {
             list.map(item => (
             <tr key={item.id} className="active-row">
                 <td>{item.id}</td>
-                <td>{item.site}</td>
+                <td>{item.url}({item.site_id})</td>
                 <td>{item.product_code}</td>
                 <td>{item.style_index}</td>
                 <td>{item.size}</td>
