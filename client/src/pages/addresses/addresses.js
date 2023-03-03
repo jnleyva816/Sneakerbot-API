@@ -13,9 +13,9 @@ const Addresses = () => {
   
 
   return (
-    <div className='content'>
+    <div >
       <Sidebar/>
-      <section id="body">
+      <section className="content" id="body">
       <h1 className='title'>Addresses</h1>
       <AddressTable/>
       <AddressForm/>

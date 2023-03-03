@@ -8,13 +8,14 @@ import ProxiesTable from './ProxiesTable';
 
 const Proxies = () => {
   return (
-    <div className='content' id="body">
+    <div >
       <Sidebar/>
+      <section className="content" id="body">
       <h1 className='title'>Proxies</h1>
       <ProxiesTable/>
       <ProxiesForm/>
       <ProxiesDelete/>
-
+      </section>
     </div>
   );
 };

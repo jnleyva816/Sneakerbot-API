@@ -9,16 +9,19 @@ import Sidebar from '../../Sidebar';
   
 const Tasks = () => {
   return (
-    <div className='content' id="body">
+    <div >
       <Sidebar/>
-      <h1 className='title'>Tasks</h1>
-      <TasksTable/>
-      <TasksForm/>
-      <TasksDelete/>
-      <section className='taskFunctions'>
-      <TasksStart/>
-      <TasksStop />
+      <section className="content" id="body">
+        <h1 className='title'>Tasks</h1>
+        <TasksTable/>
+        <TasksForm/>
+        <TasksDelete/>
+        <section className='taskFunctions'>
+        <TasksStart/>
+        <TasksStop />
+        </section>
       </section>
+      
       
 
     </div>

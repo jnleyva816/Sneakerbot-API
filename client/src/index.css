@@ -10,8 +10,9 @@
     /* Colors */
     --body-color: #f8faff;
     --sidebar-color: #dbdbdb;
-    --primary--color: rgb(66, 82, 117);
-    --primary-color-light: #F6f5ff;
+    --hover-color: rgb(97, 112, 145);
+    --primary--color: rgb(97, 112, 145);
+    --primary-color-light: rgb(87, 99, 126);
     --toggle-color: #DDD;
     --text-color: #4a545e;
     /* Transitions */
@@ -29,6 +30,7 @@ body {
 body.dark{
     --body-color: #2f3a46;
     --sidebar-color: #242526;
+    --hover-color: #4b4d52;
     --primary--color: rgb(226, 227, 229);
     --primary-color-light: #3A3B3C;
     --toggle-color: #FFF;

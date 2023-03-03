@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './Sidebar.css'
 import logo from './images/robot-line.png';
@@ -25,14 +25,20 @@ const Sidebar = () => {
   const ModeButtonClicked =() =>{
     const body = document.querySelector('body')
     body.classList.toggle("dark");
+    const modeText = body.querySelector(".mode-text");
+    
+    if(body.classList.contains("dark")){
+      modeText.innerText ="Dark Mode"
+    }else{
+      modeText.innerText ="Light Mode"
+    }
   }
 
   const toggleButtonClicked = () =>{
     const body = document.querySelector('body'),
-    sidebar = body.querySelector(".sidebar"),
-    content = body.querySelector(".content")
+    sidebar = body.querySelector(".sidebar")
     sidebar.classList.toggle("close");
-    content.classList.toggle("center");
+
   }
   
 

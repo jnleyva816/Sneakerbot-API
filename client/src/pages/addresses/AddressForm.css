@@ -64,7 +64,7 @@ h2{
 }
 
 .address_form button:hover {
-    background-color: #517ccc;
+    background-color: var(--hover-color);
     transition: 0.3s ease;
 }
 
