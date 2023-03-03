@@ -32,7 +32,7 @@ const AddressesDelete = () => {
       .then((data) => setMessage(data.message));
   }, []);
   return (
-    <div>
+    <div className='section'>
         <h2 className='section_title'>Delete Addreses by ID</h2>
         <section className='form_section'>
         <form onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>

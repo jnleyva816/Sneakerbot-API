@@ -25,7 +25,7 @@ const AddressTable = () => {
       .then((data) => setMessage(data.message));
   }, []);
   return (
-    <div>
+    <div className='section'>
         <section className='current_address_section'>
         <h2 className='section_title'>
           Current Addresses

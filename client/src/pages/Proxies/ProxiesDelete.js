@@ -26,7 +26,7 @@ const ProxiesDelete = () => {
       console.log(newdata)
     }  
   return (
-    <div className='proxies_delete'>
+    <div className='section'>
       <h2 className='section_title'>Delete Proxy by ID</h2>
       <section className='form_section'>
       <form onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>

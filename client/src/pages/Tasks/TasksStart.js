@@ -29,7 +29,7 @@ const TasksStart = () => {
     console.log(newdata)
   } 
   return (
-    <div className='task_start'>
+    <div className='section'>
         <h2 className='section_title'>Start Task by ID</h2>
         <section className='form_section'>
         <form onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>

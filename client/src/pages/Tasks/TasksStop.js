@@ -25,7 +25,7 @@ const TasksStop = () => {
     console.log(newdata)
   } 
   return (
-    <div className='task_stop'>
+    <div className='section'>
         <h2 className='section_title'>Stop Task by ID</h2>
         <section className='form_section'>
         <form onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>

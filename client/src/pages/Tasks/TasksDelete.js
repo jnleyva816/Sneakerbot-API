@@ -25,7 +25,7 @@ const TasksDelete = () => {
     console.log(newdata)
   } 
   return (
-    <div className='task_delete'>
+    <div className='section'>
        <h2 className='section_title'>Delete Task by ID</h2>
       <section className='form_section'>
      

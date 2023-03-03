@@ -63,7 +63,7 @@ const AddressForm = () => {
    
 
   return (
-    <div>
+    <div className='section'>
       <h2 className='section_title'>Create a new Address here</h2>
         <section className='form_section'>
         <form  onSubmit={(e)=>submit(e)} id='myForm' className='address_form'>
