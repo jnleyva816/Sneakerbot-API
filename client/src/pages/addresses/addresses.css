@@ -23,7 +23,7 @@
 
 .section{
     margin-top: 20px;
-
+    z-index: 1;
     padding-bottom: 35px;
 }
 

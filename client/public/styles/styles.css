@@ -7,19 +7,22 @@
     flex-wrap: nowrap;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    border: 1px solid #343B48;
+    overflow: hidden scroll;
     -webkit-box-sizing: border-box;
 }
-
+.mainApp::-webkit-scrollbar {
+    display: none;
+  }
 .mainApp > .topBar{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 40px;
-    border-bottom: 3px solid #343B4B;
-    background-color: #2d2f33;
+    height: 30px;
+    background-color: var(--sidebar-color);
+    opacity: 80%;
     -webkit-user-select:none;
+    position: fixed;
+    z-index: 100;
 }
 
 .topBar > .titleBar{
@@ -33,11 +36,12 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
+    -webkit-app-region: drag;
 }
 
 .titleBar > .toggleButton{
     width: 45px;
-    height: 40px;
+    height: 30px;
     border: none;
     outline: none;
     background-color: transparent;
@@ -67,19 +71,19 @@
     line-height: 30px;
     margin-top: 5px;
     padding-bottom: 5px;
-    -webkit-app-region: drag;
+    
  }
 
 .topBar > .titleBarBtns{
     display: flex;
     flex-direction: row;
     width: 120px;
-    height: 40px;
+    height: 30px;
 }
 
 .titleBarBtns > .topBtn{
     width: 40px;
-    height: 40px;
+    height: 30px;
     border: none;
     outline: none;
     background-color: transparent;

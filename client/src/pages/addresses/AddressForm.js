@@ -1,6 +1,6 @@
 import React from 'react'
 import './AddressForm.css'
-import{ useState, useEffect} from "react";
+import{ useState} from "react";
 import  axios from 'axios';
 
 
@@ -20,18 +20,8 @@ const AddressForm = () => {
       email_address:'',
       phone_number:'',
     })
-    const [message, setMessage] = useState("");
-    useEffect(() => {
 
-    const requestOptions ={
-      method: 'POST',
-      headers: {'Content-type': "application/json"},
-      body: JSON.stringify()
-    }
-    fetch("http://localhost:8081/v1/addresses", requestOptions)
-      .then((res) => res.json())
-      .then((data) => setMessage(data.message));
-  }, []);
+
   
     function submit(e){
       // e.preventDefault();

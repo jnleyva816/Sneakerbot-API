@@ -7,6 +7,7 @@ import Addresses from './pages/addresses/addresses.js'
 import Tasks from './pages/Tasks/tasks'
 import Proxies from './pages/Proxies/proxies'
 import 'remixicon/fonts/remixicon.css'
+import Users from './pages/Users/Users';
 
 import {
   createBrowserRouter,
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "proxies",
     element: <Proxies/>
+  },
+  {
+    path: "users",
+    element: <Users/>
   },
 ]);
 

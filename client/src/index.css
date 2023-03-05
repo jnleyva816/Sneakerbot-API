@@ -42,5 +42,5 @@ code {
     monospace;
 }
 ::-webkit-scrollbar {  
-  display: none;  
+  display: 1px;  
   }
