@@ -12,6 +12,10 @@
     padding-top: 40px;
 
 }
+
+.address_list::-webkit-scrollbar{
+    display: none;
+}
 .styled-table{
     border-collapse: collapse;
     font-size: 0.9em;

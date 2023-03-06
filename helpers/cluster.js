@@ -42,6 +42,7 @@ class PuppeteerCluster {
     const puppeteerOptions = {
       headless: false,
       defaultViewport: null,
+      product:'chrome',
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',

@@ -7,7 +7,7 @@ const TasksDelete = () => {
   const [data, setData] = useState({
         id:''
       })
-  const url = 'http://localhost:8081/v1/tasks/'+ data.id
+  const url = 'http://localhost:8080/v1/tasks/'+ data.id
 
   function submit(e){
     // e.preventDefault();

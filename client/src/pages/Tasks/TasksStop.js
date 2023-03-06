@@ -7,7 +7,7 @@ const TasksStop = () => {
     const [data, setData] = useState({
         id:''
       })
-  const url = 'http://localhost:8081/v1/tasks/'+ data.id + '/stop'
+  const url = 'http://localhost:8080/v1/tasks/'+ data.id + '/stop'
 
   function submit(e){
     // e.preventDefault();

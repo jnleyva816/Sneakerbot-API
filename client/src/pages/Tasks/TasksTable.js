@@ -11,7 +11,7 @@ const TasksTable = () => {
     },[])
   
     async function fetchData(){
-      fetch('http://localhost:8081/v1/tasks')
+      fetch('http://localhost:8080/v1/tasks')
       .then((response) => response.json())
       .then((json) => {
           setList(json.data)
@@ -19,7 +19,7 @@ const TasksTable = () => {
     }
     const [message, setMessage] = useState("");
     useEffect(() => {
-    fetch("http://localhost:8081/v1/tasks")
+    fetch("http://localhost:8080/v1/tasks")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);

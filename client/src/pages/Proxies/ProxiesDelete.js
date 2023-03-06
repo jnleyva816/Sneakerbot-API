@@ -7,7 +7,7 @@ const ProxiesDelete = () => {
     const [data, setData] = useState({
         id:''
       })
-    const url = 'http://localhost:8081/v1/proxies/'+ data.id
+    const url = 'http://localhost:8080/v1/proxies/'+ data.id
     
   
     function submit(e){

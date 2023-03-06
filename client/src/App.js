@@ -5,12 +5,10 @@ import Sidebar from "./Sidebar";
 
 
 
-
-
 function App() {
   const [message, setMessage] = useState("");
   useEffect(() => {
-    fetch("http://localhost:8081/v1/")
+    fetch("http://localhost:8080/v1/")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);

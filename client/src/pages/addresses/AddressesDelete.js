@@ -7,7 +7,7 @@ const AddressesDelete = () => {
     const [data, setData] = useState({
         id:''
       })
-    const url = 'http://localhost:8081/v1/addresses/'+ data.id
+    const url = 'http://localhost:8080/v1/addresses/'+ data.id
     
   
     function submit(e){

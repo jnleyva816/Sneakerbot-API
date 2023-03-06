@@ -3,7 +3,7 @@ import { Joi } from 'express-validation';
 export const create = {
   body: Joi.object({
     ip_address: Joi.string().required(),
-    port: Joi.number().integer().optional(),
+    port: Joi.number().integer().allow(null).optional(),
     protocol: Joi.string().required(),
     username: Joi.string().allow(null).optional(),
     password: Joi.string().allow(null).optional()

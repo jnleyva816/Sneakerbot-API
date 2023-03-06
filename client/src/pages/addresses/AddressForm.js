@@ -6,7 +6,7 @@ import  axios from 'axios';
 
 
 const AddressForm = () => {
-    const url = 'http://localhost:8081/v1/addresses'
+    const url = 'http://localhost:8080/v1/addresses'
     const [data, setData] = useState({
       type: '',
       first_name:'',

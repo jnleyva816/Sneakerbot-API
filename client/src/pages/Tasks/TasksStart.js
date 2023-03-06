@@ -10,12 +10,11 @@ const TasksStart = () => {
         card_friendly_name:''
 
       })
-  const url = 'http://localhost:8081/v1/tasks/'+ data.id + '/start'
+  const url = 'http://localhost:8080/v1/tasks/'+ data.id + '/start'
 
   function submit(e){
     // e.preventDefault();
     axios.post(url,{
-      id: data.id,
       card_friendly_name: data.card_friendly_name
     }).then(res=>{
       console.log(res.data);

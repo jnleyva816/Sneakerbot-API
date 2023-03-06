@@ -11,7 +11,7 @@ const ProxiesTable = () => {
   },[])
 
   async function fetchData(){
-    fetch('http://localhost:8081/v1/proxies')
+    fetch('http://localhost:8080/v1/proxies')
     .then((response) => response.json())
     .then((json) => {
         setList(json.data)
@@ -20,7 +20,7 @@ const ProxiesTable = () => {
 
   const [message, setMessage] = useState("");
   useEffect(() => {
-  fetch("http://localhost:8081/v1/proxies")
+  fetch("http://localhost:8080/v1/proxies")
     .then((res) => res.json())
     .then((data) => setMessage(data.message));
 }, []);
